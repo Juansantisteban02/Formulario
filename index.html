@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulario de Registro</h2>
+        <form action="#" method="post">
+            
+            <!----Nombres---->
+            <div class="form-group">
+                <label for="nombres">Nombres:</label>
+                <input type="text" id="nombres" name="nombres" placeholder="Ingresa tus nombres" required>
+            </div>
+
+            <!----Apellidos---->
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
+            </div>
+
+            <!----Tipo de identificacion---->
+            <div class="form-group">
+                <label for="tipo-id">Tipo de documento:</label>
+                <select id="tipo-id" name="tipo-id" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="cedula">Cédula de ciudadanía</option>
+                    <option value="tarjeta">Tarjeta de identidad</option>   
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="cedula-extranjera">Cédula de extranjería</option>
+                </select>
+            </div>
+
+            <!----Pais de domicilio---->
+            <div class="form-group">
+                <label for="pais">País de domicilio:</label>
+                <input type="text" id="pais" name="pais" placeholder="Ej: Colombia" required>
+            </div>
+
+            <!----Ciudad de domicilio---->
+            <div class="form-group">
+                <label for="ciudad">Ciudad de domicilio:</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ej: Bogotá" required>
+            </div>
+
+            <!----Numero de telefono---->
+            <div class="form-group">
+                <label for="telefono">Número de teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ej: 3191234567" required>
+            </div>
+
+            <!----Correo---->
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <!----Check de tratamiento de datos---->
+            <div class="terms-group">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos" class="terms-label">
+                    Acepto los términos y condiciones
+                    <br>
+                    <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981" target="_blank" rel="noopener noreferrer">Tratamiento de datos</a>
+                </label>
+            </div>
+
+            <!----Boton de enviar---->
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </div>
+
+</body>
+</html>
